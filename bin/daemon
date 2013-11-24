@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+Bundler.require
+
+Urayon::Initializer.init( namespace: 'forward_agent', forward_to: "http://localhost:3000/")
+$daemon.start
